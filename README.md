@@ -25,7 +25,7 @@ use Ognjen\Laravel\AsyncMail;
 class OrderObserver {
     public function created(Order $order)
     {
-        AsyncMail::send(new QuoteCreated($order));
+        AsyncMail::send(new OrderCreated($order));
     }
 }
 ```
