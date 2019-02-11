@@ -1,6 +1,6 @@
 <?php
 
-namespace OgPe\Laravel;
+namespace Ognjen\Laravel;
 
 class AsyncMail {
     public static function send($mailable) {
