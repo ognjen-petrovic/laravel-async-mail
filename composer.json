@@ -14,5 +14,13 @@
         "psr-4": {
             "Ognjen\\Laravel\\": "src"
         }   
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ognjen\\Laravel\\AsyncMailProvider"
+            ]
+        }
     }
+
 }

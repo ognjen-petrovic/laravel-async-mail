@@ -2,8 +2,25 @@
 
 namespace Ognjen\Laravel;
 
-class AsyncMail {
-    public static function send($mailable) {
-        \Log::debug('hello from' . __CLASS__);
+use Symfony\Component\Process\Process;
+
+class AsyncMail
+{
+    public static function send($mailable)
+    {
+        $param = base64_encode(serialize($mailable));
+        $command = self::createCommandString($param);
+        $process = new Process($command);
+        $process->run();
+    }
+
+    protected static function createCommandString($param)
+    {
+        if (defined('PHP_WINDOWS_VERSION_BUILD'))
+        {
+            return 'start /B php ' . base_path('artisan') . ' async:mail ' . $m . ' > NUL';
+        } else {
+            return 'php ' . base_path('artisan') . ' async:mail ' . $m . ' > /dev/null 2>&1 &';
+        }
     }
 }
