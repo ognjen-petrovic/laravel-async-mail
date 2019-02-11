@@ -1,5 +1,5 @@
 {
-    "name": "ognjen/async-mail",
+    "name": "ognjen/laravel-async-mail",
     "description": "Send async mails from Laravel",
     "type": "library",
     "license": "MIT",
