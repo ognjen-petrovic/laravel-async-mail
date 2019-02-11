@@ -4,6 +4,6 @@ namespace Ognjen\Laravel;
 
 class AsyncMail {
     public static function send($mailable) {
-        \Log::debug('hello from' . __NAMESPACE__ . __CLASS__);
+        \Log::debug('hello from' . __CLASS__);
     }
 }
