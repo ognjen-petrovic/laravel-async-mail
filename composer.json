@@ -1,0 +1,16 @@
+{
+    "name": "ognjen/async-mail",
+    "description": "Send async mails from Laravel",
+    "type": "library",
+    "require": {
+        "illuminate/log": "^5.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ognjen Petrovic",
+            "email": "ognjen.petrovic2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
