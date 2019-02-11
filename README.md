@@ -11,7 +11,7 @@ This aproach is different, it leverages "Symfony\Component\Process\Process" clas
 
 Require package with Composer:
 ```
-composer require ognjen/laravel-async-mail:dev-master
+composer require ognjen/laravel-async-mail
 ```
 
 ### Usage example
