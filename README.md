@@ -1,7 +1,9 @@
 # laravel-async-mail
 Sends async mails from Laravel.
 
-Since sending email messages can drastically lengthen the response time of your application, many developers choose to queue email messages for background sending. Laravel makes that easy using its built-in unified queue API. 
+As Laravel documentation says:
+> Since sending email messages can drastically lengthen the response time of your application, many developers choose to queue email 
+> messages for background sending. Laravel makes that easy using its built-in unified queue API. 
 
 This aproach is different, it leverages "Symfony\Component\Process\Process" class to create separate PHP process and sends an "Illuminate\Mail\Mailable" using artisan command.
 
