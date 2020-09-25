@@ -19,7 +19,8 @@ class AsyncMail
         if (defined('PHP_WINDOWS_VERSION_BUILD'))
         {
             return 'start /B php ' . base_path('artisan') . ' async:mail ' . $param . ' > NUL';
-        } else {
+        } else
+        {
             return 'php ' . base_path('artisan') . ' async:mail ' . $param . ' > /dev/null 2>&1 &';
         }
     }
