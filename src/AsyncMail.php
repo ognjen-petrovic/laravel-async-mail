@@ -10,7 +10,7 @@ class AsyncMail
     {
         $param = base64_encode(serialize($mailable));
         $command = self::createCommandString($param);
-        $process = new Process($command);
+        $process = new Process([$command]);
         $process->run();
     }
 
