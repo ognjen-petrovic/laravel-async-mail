@@ -23,6 +23,6 @@
         }
     },
     "require": {
-        "ognjen/laravel-async-mail": "v2.0.0"
+        "ognjen/laravel-async-mail": "v3.0.0"
     }
 }
