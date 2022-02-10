@@ -21,8 +21,5 @@
                 "Ognjen\\Laravel\\AsyncMailProvider"
             ]
         }
-    },
-    "require": {
-        "ognjen/laravel-async-mail": "v3.0.0"
     }
 }
